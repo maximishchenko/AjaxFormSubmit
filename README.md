@@ -22,6 +22,14 @@
 </script>
 ```
 
+Plugin class argument must be in format such as:
+
+```html
+<script>
+    document.querySelectorAll(argument);
+</script>
+```
+
 Or if you want to enable debug mode (console messages) or pass callback function you can pass params such as:
 
 ```html
