@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Ajax form submitting
+        </title>
+        <script src="../AjaxFormSubmit.min.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>
+                Ajax form submitting
+            </h1>
+        </header>
+        <main>
+            <form method="" action="" data-ajax-form>
+                <input type="text" placeholder="some text here" autofocus>
+                <button type="submit">
+                    Submit
+                </button>
+            </form>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+
+    <script type="text/javascript">
+        const alertSuccess = () => {
+            alert('Successfully');
+        };
+        let alertForm = new AjaxFormSubmit('form[data-ajax-form]', {
+            debug: true,
+            callback: alertSuccess,
+        });
+    </script>
+</html>
